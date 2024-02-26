@@ -1,0 +1,28 @@
+### Git ###
+.gitignore        eol=lf encoding=utf-8
+.gitattributes    eol=lf encoding=utf-8
+.gitkeep          eol=lf encoding=utf-8
+.gitmodules       eol=lf
+
+### Frontend ###
+# NPM
+.npmrc          text eol=lf encoding=utf-8
+
+.browserslistrc text eol=lf encoding=utf-8
+.editorconfig   text eol=lf encoding=utf-8
+.prettierignore text eol=lf encoding=utf-8
+.prettierrc     text eol=lf encoding=utf-8
+
+*.html  text eol=lf encoding=utf-8
+*.xhtml  text eol=lf encoding=utf-8
+*.css   text eol=lf encoding=utf-8
+*.scss  text eol=lf encoding=utf-8
+*.ico   binary
+*.jpg   binary
+*.js    text eol=lf encoding=utf-8
+*.json  text eol=lf encoding=utf-8
+*.png   binary
+*.svg   text eol=lf encoding=utf-8
+*.ts    text eol=lf encoding=utf-8
+*.ttf   binary
+*.woff  binary
