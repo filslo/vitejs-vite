@@ -1,27 +1,28 @@
-
-<script setup>
-</script>
-
-
 <template>
   <div>
-    <h1>Recherche d'album par artiste</h1>
+    <h1>Search Artist albums</h1>
     <form @submit.prevent="searchAlbums">
       <label>
-        Nom de l'artiste :
+        Artist Name:
         <input type="text" v-model="artistNameInput">
       </label>
-      <button type="submit">Rechercher</button>
+      <button type="submit">Search</button>
     </form>
     <Artist :artistName="artistName"/>
   </div>
 </template>
 
 <script>
-import axios from 'axios';
-import Artist from './Artist.vue'
+import Artist from "./Artist.vue"
+import Layout from "../layouts/default.vue"
+
 
 export default {
+  components: {
+    Layout,
+    Artist
+  },
+
   data() {
     return {
       artistNameInput: '',
@@ -30,13 +31,11 @@ export default {
     };
   },
   methods: {
-    searchAlbums() {
+    async searchAlbums() {
       this.artistName = this.artistNameInput;
+
     },
   },
 
-components: {
-  Artist
-},
 };
 </script>
