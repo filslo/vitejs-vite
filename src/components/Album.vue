@@ -8,7 +8,8 @@
     <img v-if="album.idArtist" :src="album.strAlbumThumb"
          alt="albumThumb"
          height="100px"
-         width="150px"/>
+         width="150px"
+         crossorigin="anonymous"/>
     <h1>
       <router-link v-if="album.idAlbum" :to="{ name: 'album',  params: { id: album.idAlbum } }">{{ album.strAlbum }} ({{album.strArtist}})</router-link>
       <StarIcon v-if="format==='full'"

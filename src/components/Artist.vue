@@ -11,7 +11,8 @@
               <img :src="album.strAlbumThumb"
                    alt="albumThumb"
                    height="100px"
-                   width="100px"/>
+                   width="100px"
+                   crossorigin="anonymous"/>
               <p>{{ album.strArtist  }} -{{ album.strAlbum }}</p>
             </router-link>
 
